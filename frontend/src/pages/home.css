@@ -1,0 +1,143 @@
+.header {
+    background-color: #F76E11;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.headerlist {
+    display: flex;
+    gap: 40px
+}
+
+.headerlistitems {
+    display: flex;
+    gap: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.headerlistitems:hover {
+    background-color: white;
+    color: #FF9F45;
+}
+
+
+.headertitle {
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    /* left: 0; */
+    align-items: left;
+
+}
+
+.headerDesc {
+    width: 100%;
+    font-style: italic;
+    padding: 20;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.signin {
+    /* margin-top: 10px; */
+    padding: 5px 10px;
+    color: #F76E11;
+    border-radius: 5px;
+    border-color: #3E78B2;
+    font-weight: 700;
+    background-color: white;
+}
+
+.headerSearch {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #ff8f44;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px 1px black;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.headersearchinput {
+    width: 210px;
+    padding: 5px 10px;
+    color: #004ba8;
+    border-radius: 5px;
+    border-color: #3E78B2;
+    font-weight: 500;
+    background-color: white;
+}
+
+.headerSearchItem {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerBtn {
+    margin: 5px 5px;
+    padding: 5px 10px;
+    color: #004ba8;
+    border-radius: 5px;
+    border-color: #3E78B2;
+    font-weight: 400;
+    background-color: white;
+}
+
+.date {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.options {
+    position: absolute;
+    bottom: 225px;
+    background-color: white;
+    color: #004ba8;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid;
+    z-index: 2;
+}
+
+.optionsitem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 200px;
+    align-items: center;
+}
+
+.optioncounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optioncounterbutton {
+    color: black;
+    cursor: pointer;
+}
+
+.optioncounterbutton:disabled {
+    cursor: not-allowed;
+}

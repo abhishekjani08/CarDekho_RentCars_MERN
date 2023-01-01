@@ -1,0 +1,42 @@
+.navbar{
+    height: 50px;
+    background-color: #FF9F45;
+    display: flex;
+    justify-content: center;
+}
+.navcontainer{
+    width: 100%;
+    background-color: #FF9F45;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    padding-left: 15px;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.signin {
+    /* margin-top: 10px; */
+    padding: 5px 10px;
+    color: #F76E11;
+    border-radius: 5px;
+    border-color: #3E78B2;
+    font-weight: 500;
+    background-color: white;
+}
+
+.navbutton{
+    margin:15px;
+    padding: 5px 10px;
+    color:#F76E11;
+    border-radius: 5px;
+    border-color:#3E78B2 ;
+    font-weight: 700;
+    background-color: white;
+}
