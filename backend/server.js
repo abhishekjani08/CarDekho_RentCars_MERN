@@ -16,8 +16,6 @@ app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
 
-//----------deployment-----------------
-
 __dirname = path.resolve();
 
 if(process.env.NODE_ENV==="production") {
@@ -28,7 +26,7 @@ if(process.env.NODE_ENV==="production") {
  });
 }else{
 	app.get("/", (req, res)=>{
-      res.send("API is running..");
+      res.send("API is running.");
 	});
 }
 
