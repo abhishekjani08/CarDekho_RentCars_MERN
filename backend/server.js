@@ -4,11 +4,15 @@ const Car = require('./models/carModel');
 const port = process.env.PORT || 5000;
 const dbConnection = require ('./db');
 app.use(express.json());
+
+require('dotenv').config();
+
+// require('dotenv').config({ path: '.env' });
+// console.log(process.env.MONGOURL)
 const path = require("path");
 const usersRoute = require('./routes/usersRoute')
 const carsRoute = require('./routes/carsRoute')
 const bookingsRoute = require('./routes/bookingsRoute')
-const path = require('path')
 
 
 app.use("/api/cars/", require("./routes/carsRoute"));
