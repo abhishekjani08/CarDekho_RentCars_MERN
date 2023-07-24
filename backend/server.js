@@ -8,7 +8,7 @@ const path = require("path");
 const usersRoute = require('./routes/usersRoute')
 const carsRoute = require('./routes/carsRoute')
 const bookingsRoute = require('./routes/bookingsRoute')
-
+const path = require('path')
 
 
 app.use("/api/cars/", require("./routes/carsRoute"));
@@ -29,6 +29,13 @@ if(process.env.NODE_ENV==="production") {
       res.send("API is running.");
 	});
 }
+
+//static files
+app.use(express.static(path.join(__dirname,'../frontend/build')))
+
+app.get('*', function(req,res){
+  res.sendFile(path.join(__dirname,"../frontend/build/index.html"))
+})
 
 
 //----------deployment-----------
